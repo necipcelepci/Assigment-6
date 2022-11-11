@@ -1,0 +1,9 @@
+{
+    "id": "/subscriptions/0aea19e4-c56f-405e-9ab3-1a85c8db25ca/resourceGroups/necip-az104-06-rg4",
+    "name": "necip-az104-06-rg4",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "name": "az104-deop-vm",
+    "id": "/subscriptions/0aea19e4-c56f-405e-9ab3-1a85c8db25ca/resourceGroups/necip-az104-06-rg4/providers/Microsoft.Compute/virtualMachines/az104-deop-vm",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "0295a214-984a-4fb0-826c-d7a17aa3035a",
+        "hardwareProfile": {
+            "vmSize": "Standard_DS1_v2"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2019-datacenter-gensecond",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "az104-deop-vm_OsDisk_1_c59151528836408cb44d8cc4cdf2c2d0",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/0aea19e4-c56f-405e-9ab3-1a85c8db25ca/resourceGroups/necip-az104-06-rg4/providers/Microsoft.Compute/disks/az104-deop-vm_OsDisk_1_c59151528836408cb44d8cc4cdf2c2d0"
+                },
+                "diskSizeGB": 127
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "az104-deop-vm",
+            "adminUsername": "necip104deop",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/0aea19e4-c56f-405e-9ab3-1a85c8db25ca/resourceGroups/necip-az104-06-rg4/providers/Microsoft.Network/networkInterfaces/az104-deop-vm334_z1",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    },
+    "zones": [
+        "1"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/0aea19e4-c56f-405e-9ab3-1a85c8db25ca/resourceGroups/necip-az104-06-rg4/providers/Microsoft.Storage/storageAccounts/storageaz104deop",
+    "name": "storageaz104deop",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "westus",
+    "tags": {},
+    "properties": {
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": true,
+        "allowSharedKeyAccess": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [
+                {
+                    "value": "99.247.76.21",
+                    "action": "Allow"
+                }
+            ],
+            "defaultAction": "Deny"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "services": {
+                "file": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-11-11T02:06:41.8747659Z"
+                },
+                "blob": {
+                    "enabled": true,
+                    "lastEnabledTime": "2022-11-11T02:06:41.8747659Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Cool",
+        "provisioningState": "Succeeded",
+        "creationTime": "2022-11-11T02:06:41.7497587Z",
+        "primaryEndpoints": {
+            "dfs": "https://storageaz104deop.dfs.core.windows.net/",
+            "web": "https://storageaz104deop.z22.web.core.windows.net/",
+            "blob": "https://storageaz104deop.blob.core.windows.net/",
+            "queue": "https://storageaz104deop.queue.core.windows.net/",
+            "table": "https://storageaz104deop.table.core.windows.net/",
+            "file": "https://storageaz104deop.file.core.windows.net/"
+        },
+        "primaryLocation": "westus",
+        "statusOfPrimary": "available"
+    }
+}
